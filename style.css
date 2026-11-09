@@ -1,0 +1,111 @@
+/* =========================================================
+   PALETA DE CORES LILÁS E ROXO (CENTRAL DE NOTIFICAÇÕES)
+   ========================================================= */
+
+:root {
+  --bg-lavender: #f3e8ff;      /* Fundo da página (Lilás clarinho) */
+  --purple-dark: #4a154b;      /* Navbar, títulos e rodapé (Roxo escuro) */
+  --purple-main: #7b2cbf;      /* Card 1 e botões principais (Roxo vibrante) */
+  --purple-medium: #9d4edd;    /* Card 2 e destaques médios (Lilás médio) */
+  --purple-light: #c77dff;     /* Card 3 e bordas claras (Lilás claro) */
+}
+
+/* Fundo Geral da Página */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-lavender) !important;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar e Modais */
+.bg-navbar-purple, 
+.bg-primary {
+  background-color: var(--purple-dark) !important;
+}
+
+/* Títulos */
+.text-purple-dark, h1, h5 {
+  color: var(--purple-dark) !important;
+}
+
+.text-purple-main {
+  color: var(--purple-main) !important;
+}
+
+/* =========================================================
+   BORDAS DOS CARDS (Lilás e Roxo em vez de verde/amarelo/azul)
+   ========================================================= */
+
+.border-purple-dark, .border-success {
+  border-color: var(--purple-dark) !important;
+}
+
+.border-purple-main, .border-warning {
+  border-color: var(--purple-main) !important;
+}
+
+.border-purple-medium, .border-info {
+  border-color: var(--purple-medium) !important;
+}
+
+/* Ícones dos Cards */
+.text-success, .text-warning, .text-info {
+  color: var(--purple-main) !important;
+}
+
+/* =========================================================
+   BOTÕES DOS CARDS (Tons Lilás)
+   ========================================================= */
+
+/* Botão Card 1 */
+.btn-purple-dark, .btn-success {
+  background-color: var(--purple-dark) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.btn-purple-dark:hover, .btn-success:hover {
+  background-color: #350d36 !important;
+}
+
+/* Botão Card 2 */
+.btn-purple-main, .btn-warning {
+  background-color: var(--purple-main) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.btn-purple-main:hover, .btn-warning:hover {
+  background-color: #5a189a !important;
+}
+
+/* Botão Card 3 */
+.btn-purple-medium, .btn-info {
+  background-color: var(--purple-medium) !important;
+  color: #ffffff !important;
+  border: none !important;
+}
+.btn-purple-medium:hover, .btn-info:hover {
+  background-color: #7b2cbf !important;
+}
+
+/* =========================================================
+   HISTÓRICO E BADGES
+   ========================================================= */
+
+.bg-purple-badge, .badge.bg-secondary {
+  background-color: var(--purple-dark) !important;
+  color: #ffffff !important;
+}
+
+.history-scroll {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.toast-container {
+  z-index: 1090;
+}

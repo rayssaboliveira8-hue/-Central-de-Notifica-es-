@@ -1,0 +1,38 @@
+ETAPA 1 — INVESTIGAÇÃO
+
+1. O que é um Toast e qual sua finalidade?
+Resposta: É um componente visual leve e temporário utilizado para exibir pequenas mensagens informativas de feedback (como confirmações ou alertas) na tela sem interromper ou bloquear a navegação do usuário.
+
+2. Qual é a principal diferença entre um Toast e um Modal?
+Resposta: O Modal é interativo, bloqueia o restante da tela com um fundo escuro (backdrop) e exige uma ação manual do usuário para ser fechado. Já o Toast é passivo, discreto, não bloqueia a navegação e geralmente desaparece sozinho após alguns segundos.
+
+3. O Toast aparece automaticamente ou precisa ser ativado?
+Resposta: O Toast não aparece automaticamente. Ele permanece oculto no HTML por padrão e precisa ser ativado explicitamente via código JavaScript.
+
+4. Qual instrução JavaScript permite criar uma instância de Toast?
+Resposta: const myToast = new bootstrap.Toast(elementoHtml, opções);
+
+5. Para que serve o método .show()?
+Resposta: Serve para tornar o Toast visível na tela, acionando a animação de entrada do Bootstrap.
+
+6. O que significa a opção autohide?
+Resposta: É uma opção booleana (true/false) que define se o Toast deve ocultar a si mesmo automaticamente após o tempo determinado.
+
+7. Qual é a finalidade de delay?
+Resposta: Define o tempo de permanência da notificação visível na tela em milissegundos (ex: 5000 para 5 segundos) antes do acionamento do fechar automático.
+
+===================================================================
+
+REFLEXÃO FINAL
+
+1. Qual foi a maior diferença entre programar um Modal e um Toast?
+Resposta: A principal diferença foi o controle do tempo e da interatividade. O Modal exige gerenciamento de foco e bloqueio da interface para tomadas de decisão críticas. O Toast exige manipulação assíncrona, controlando o tempo de exibição e alteração dinâmica do conteúdo sem interromper o fluxo de navegação do usuário.
+
+2. Qual funcionalidade exigiu mais pesquisa?
+Resposta: A implementação do Desafio Técnico, que consistiu em reaproveitar uma única estrutura HTML de Toast para atualizar e exibir dinamicamente diferentes títulos, mensagens e tonalidades visuais via JavaScript a cada clique.
+
+3. O que foi reaproveitado da atividade anterior?
+Resposta: A sintaxe e estrutura de inicialização dos componentes via API do Bootstrap em JavaScript, a criação e manipulação dos Modais (utilizados no "Sobre o sistema" e na confirmação de exclusão do histórico) e a organização do layout responsivo com Grid Bootstrap.
+
+4. Se o sistema precisasse apresentar 20 tipos de notificação, vocês criariam 20 Toasts? Justifiquem.
+Resposta: Não. Criar 20 elementos de Toast estáticos no HTML deixaria o código extremamente repetitivo, pesado e difícil de manter. A melhor prática é manter apenas uma estrutura genérica de Toast no HTML e alterar dinamicamente suas propriedades (título, texto, cores e ícones) através de funções JavaScript.
